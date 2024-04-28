@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block title %}Add-task{%endblock%}
+
+{% block content %}
+{{ super() }}
+<form action="{{url_for('add_task')}}" method="get"></form>
+
+ <div class="mb-3 row">
+    <label for="task1" class="col-sm-2 col-form-label">Task1</label>
+    <div class="col-sm-10">
+      <input type="text" readonly class="form-control-plaintext" id="task1" >
+    </div>
+ </div>
+ <div class="mb-3 row">
+    <label for="task2" class="col-sm-2 col-form-label">Task1</label>
+    <div class="col-sm-10">
+      <input type="text" readonly class="form-control-plaintext" id="task2" >
+    </div>
+ </div>
+ <div class="mb-3 row">
+    <label for="staticEmail" class="col-sm-2 col-form-label">Task1</label>
+    <div class="col-sm-10">
+      <input type="text" readonly class="form-control-plaintext" id="task1" >
+    </div>
+ </div>
+<div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</div>
